@@ -1,5 +1,5 @@
-const http = require("http");
-
+//No Need to this
+//const http = require("http");
 const express = require("express");
 
 const app = express()
@@ -41,6 +41,9 @@ function myHandler(req, res) {
     });
 }
 
-const myServer = http.createServer(myHandler);
+// NO need to write this 
+// const myServer = http.createServer(app);
 
-myServer.listen(5001, () => console.log("Server Started"))
+// myServer.listen(5001, () => console.log("Server Started"))
+
+app.listen(5001, () => console.log("Server Started!"));
